@@ -1,4 +1,6 @@
 from django.db import models
+import string
+import random
 
 class QueryMap(models.Model):
     src = models.CharField(max_length=500, unique=True)
