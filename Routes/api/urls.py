@@ -1,7 +1,6 @@
 from django.urls import path
-from .views import main
+from .views import QueryMapView
 
 urlpatterns = [
-    path('home', main),
-    path('', main)
+    path('querymap', QueryMapView.as_view())
 ]
